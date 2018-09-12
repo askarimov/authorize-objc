@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A12C77D2149715A003AF8FE /* ReposServiceGithubImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C77C2149715A003AF8FE /* ReposServiceGithubImpl.m */; };
+		7A12C78121497243003AF8FE /* AKReposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C78021497243003AF8FE /* AKReposViewController.m */; };
+		7A12C790214973FB003AF8FE /* AKReposView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C78F214973FB003AF8FE /* AKReposView.m */; };
+		7A12C7972149774E003AF8FE /* AKReposViewModelImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C7962149774E003AF8FE /* AKReposViewModelImpl.m */; };
+		7A12C79C214981ED003AF8FE /* AKRepoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C79B214981ED003AF8FE /* AKRepoTableViewCell.m */; };
+		7A12C7A1214987FB003AF8FE /* AKRepo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C7A0214987FB003AF8FE /* AKRepo.m */; };
+		7A12C7A4214988DB003AF8FE /* AKRepo+Displayable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C7A3214988DB003AF8FE /* AKRepo+Displayable.m */; };
+		7A12C7A721498A3A003AF8FE /* ReposServiceDebugImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C7A621498A3A003AF8FE /* ReposServiceDebugImpl.m */; };
+		7A12C7AA214995CE003AF8FE /* AKRepoExtendedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C7A9214995CE003AF8FE /* AKRepoExtendedTableViewCell.m */; };
+		7A12C7AE2149A701003AF8FE /* NSArray+SafeIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C7AD2149A701003AF8FE /* NSArray+SafeIndex.m */; };
+		7AB98F402146B0CA00947269 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB98F3F2146B0CA00947269 /* LoginService.m */; };
+		7AB98F81214829A400947269 /* AKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB98F80214829A400947269 /* AKMainViewController.m */; };
+		7AC853E620150742007C5E0D /* BaseLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC853E520150742007C5E0D /* BaseLoginView.m */; };
+		7AC853E9201507B0007C5E0D /* AnotherBaseLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC853E8201507B0007C5E0D /* AnotherBaseLoginView.m */; };
+		7ADED0DB201EB983003B37E2 /* AKSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADED0DA201EB983003B37E2 /* AKSignUpViewController.m */; };
+		7ADED0DF201EB9DC003B37E2 /* AKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADED0DE201EB9DC003B37E2 /* AKBaseViewController.m */; };
+		7AE57E62200B8267004576CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE57E61200B8267004576CB /* AppDelegate.m */; };
+		7AE57E68200B8267004576CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE57E66200B8267004576CB /* Main.storyboard */; };
+		7AE57E6A200B8267004576CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE57E69200B8267004576CB /* Assets.xcassets */; };
+		7AE57E6D200B8267004576CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE57E6B200B8267004576CB /* LaunchScreen.storyboard */; };
+		7AE57E70200B8267004576CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE57E6F200B8267004576CB /* main.m */; };
+		7AE57E78200B85F0004576CB /* AKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE57E77200B85F0004576CB /* AKLoginViewController.m */; };
+		7AE57E7F200B8656004576CB /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE57E7E200B8656004576CB /* LoginView.m */; };
+		7AE57E82200B8668004576CB /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE57E81200B8668004576CB /* BaseView.m */; };
+		F252476B4273BACFAB978893 /* libPods-authorize-objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCBEA995DECDA551E4947D1 /* libPods-authorize-objc.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A12C77A214970D3003AF8FE /* IReposService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IReposService.h; sourceTree = "<group>"; };
+		7A12C77B2149715A003AF8FE /* ReposServiceGithubImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReposServiceGithubImpl.h; sourceTree = "<group>"; };
+		7A12C77C2149715A003AF8FE /* ReposServiceGithubImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReposServiceGithubImpl.m; sourceTree = "<group>"; };
+		7A12C77F21497243003AF8FE /* AKReposViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKReposViewController.h; sourceTree = "<group>"; };
+		7A12C78021497243003AF8FE /* AKReposViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKReposViewController.m; sourceTree = "<group>"; };
+		7A12C78F214973FB003AF8FE /* AKReposView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKReposView.m; sourceTree = "<group>"; };
+		7A12C791214975B5003AF8FE /* IReposView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IReposView.h; sourceTree = "<group>"; };
+		7A12C792214976A8003AF8FE /* IReposViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IReposViewDelegate.h; sourceTree = "<group>"; };
+		7A12C79421497738003AF8FE /* IReposViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IReposViewModel.h; sourceTree = "<group>"; };
+		7A12C7952149774E003AF8FE /* AKReposViewModelImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKReposViewModelImpl.h; sourceTree = "<group>"; };
+		7A12C7962149774E003AF8FE /* AKReposViewModelImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKReposViewModelImpl.m; sourceTree = "<group>"; };
+		7A12C799214981C2003AF8FE /* IRepoCellPrototype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRepoCellPrototype.h; sourceTree = "<group>"; };
+		7A12C79A214981ED003AF8FE /* AKRepoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKRepoTableViewCell.h; sourceTree = "<group>"; };
+		7A12C79B214981ED003AF8FE /* AKRepoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKRepoTableViewCell.m; sourceTree = "<group>"; };
+		7A12C79D2149822D003AF8FE /* AKReposView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKReposView.h; sourceTree = "<group>"; };
+		7A12C79F214987FB003AF8FE /* AKRepo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKRepo.h; sourceTree = "<group>"; };
+		7A12C7A0214987FB003AF8FE /* AKRepo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKRepo.m; sourceTree = "<group>"; };
+		7A12C7A2214988DB003AF8FE /* AKRepo+Displayable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AKRepo+Displayable.h"; sourceTree = "<group>"; };
+		7A12C7A3214988DB003AF8FE /* AKRepo+Displayable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AKRepo+Displayable.m"; sourceTree = "<group>"; };
+		7A12C7A521498A3A003AF8FE /* ReposServiceDebugImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReposServiceDebugImpl.h; sourceTree = "<group>"; };
+		7A12C7A621498A3A003AF8FE /* ReposServiceDebugImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReposServiceDebugImpl.m; sourceTree = "<group>"; };
+		7A12C7A8214995CE003AF8FE /* AKRepoExtendedTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKRepoExtendedTableViewCell.h; sourceTree = "<group>"; };
+		7A12C7A9214995CE003AF8FE /* AKRepoExtendedTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKRepoExtendedTableViewCell.m; sourceTree = "<group>"; };
+		7A12C7AC2149A701003AF8FE /* NSArray+SafeIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeIndex.h"; sourceTree = "<group>"; };
+		7A12C7AD2149A701003AF8FE /* NSArray+SafeIndex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeIndex.m"; sourceTree = "<group>"; };
+		7AB98F3E2146B0CA00947269 /* LoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
+		7AB98F3F2146B0CA00947269 /* LoginService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
+		7AB98F412146B15900947269 /* ISignUpView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISignUpView.h; sourceTree = "<group>"; };
+		7AB98F422146B19800947269 /* ISignUpViewEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISignUpViewEventHandler.h; sourceTree = "<group>"; };
+		7AB98F432146B20F00947269 /* ILoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILoginService.h; sourceTree = "<group>"; };
+		7AB98F7F214829A400947269 /* AKMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKMainViewController.h; sourceTree = "<group>"; };
+		7AB98F80214829A400947269 /* AKMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKMainViewController.m; sourceTree = "<group>"; };
+		7AC853E02014FB5F007C5E0D /* ILoginViewEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILoginViewEventHandler.h; sourceTree = "<group>"; };
+		7AC853E420150742007C5E0D /* BaseLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLoginView.h; sourceTree = "<group>"; };
+		7AC853E520150742007C5E0D /* BaseLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLoginView.m; sourceTree = "<group>"; };
+		7AC853E7201507B0007C5E0D /* AnotherBaseLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnotherBaseLoginView.h; sourceTree = "<group>"; };
+		7AC853E8201507B0007C5E0D /* AnotherBaseLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnotherBaseLoginView.m; sourceTree = "<group>"; };
+		7ADED0D9201EB983003B37E2 /* AKSignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKSignUpViewController.h; sourceTree = "<group>"; };
+		7ADED0DA201EB983003B37E2 /* AKSignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKSignUpViewController.m; sourceTree = "<group>"; };
+		7ADED0DD201EB9DC003B37E2 /* AKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKBaseViewController.h; sourceTree = "<group>"; };
+		7ADED0DE201EB9DC003B37E2 /* AKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKBaseViewController.m; sourceTree = "<group>"; };
+		7AE57E5D200B8267004576CB /* authorize-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "authorize-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE57E60200B8267004576CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7AE57E61200B8267004576CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7AE57E67200B8267004576CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AE57E69200B8267004576CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AE57E6C200B8267004576CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7AE57E6E200B8267004576CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE57E6F200B8267004576CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AE57E76200B85F0004576CB /* AKLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKLoginViewController.h; sourceTree = "<group>"; };
+		7AE57E77200B85F0004576CB /* AKLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKLoginViewController.m; sourceTree = "<group>"; };
+		7AE57E7D200B8656004576CB /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		7AE57E7E200B8656004576CB /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		7AE57E80200B8668004576CB /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		7AE57E81200B8668004576CB /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		7AE57E83200B9162004576CB /* ILoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILoginView.h; sourceTree = "<group>"; };
+		89210B5E363377371AD058C2 /* Pods-authorize-objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-authorize-objc.release.xcconfig"; path = "Pods/Target Support Files/Pods-authorize-objc/Pods-authorize-objc.release.xcconfig"; sourceTree = "<group>"; };
+		A58C29D83C60796620073BF9 /* Pods-authorize-objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-authorize-objc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-authorize-objc/Pods-authorize-objc.debug.xcconfig"; sourceTree = "<group>"; };
+		ABCBEA995DECDA551E4947D1 /* libPods-authorize-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-authorize-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AE57E5A200B8267004576CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F252476B4273BACFAB978893 /* libPods-authorize-objc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A12C77821497097003AF8FE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7AB98F432146B20F00947269 /* ILoginService.h */,
+				7AB98F3E2146B0CA00947269 /* LoginService.h */,
+				7AB98F3F2146B0CA00947269 /* LoginService.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7A12C779214970A8003AF8FE /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C77A214970D3003AF8FE /* IReposService.h */,
+				7A12C77B2149715A003AF8FE /* ReposServiceGithubImpl.h */,
+				7A12C77C2149715A003AF8FE /* ReposServiceGithubImpl.m */,
+				7A12C7A521498A3A003AF8FE /* ReposServiceDebugImpl.h */,
+				7A12C7A621498A3A003AF8FE /* ReposServiceDebugImpl.m */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
+		7A12C782214972B4003AF8FE /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C7B02149A99C003AF8FE /* Base */,
+				7A12C78A21497374003AF8FE /* Main */,
+				7A12C7882149734F003AF8FE /* Repos */,
+				7A12C78621497332003AF8FE /* Signup */,
+				7A12C783214972C1003AF8FE /* Login */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		7A12C783214972C1003AF8FE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C784214972C8003AF8FE /* Controllers */,
+				7A12C785214972CE003AF8FE /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7A12C784214972C8003AF8FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7AE57E76200B85F0004576CB /* AKLoginViewController.h */,
+				7AE57E77200B85F0004576CB /* AKLoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A12C785214972CE003AF8FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7AE57E83200B9162004576CB /* ILoginView.h */,
+				7AC853E02014FB5F007C5E0D /* ILoginViewEventHandler.h */,
+				7AE57E7D200B8656004576CB /* LoginView.h */,
+				7AE57E7E200B8656004576CB /* LoginView.m */,
+				7AC853E420150742007C5E0D /* BaseLoginView.h */,
+				7AC853E520150742007C5E0D /* BaseLoginView.m */,
+				7AC853E7201507B0007C5E0D /* AnotherBaseLoginView.h */,
+				7AC853E8201507B0007C5E0D /* AnotherBaseLoginView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A12C78621497332003AF8FE /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C7872149733A003AF8FE /* Controllers */,
+				7A12C7AF2149A97E003AF8FE /* Views */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		7A12C7872149733A003AF8FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7ADED0D9201EB983003B37E2 /* AKSignUpViewController.h */,
+				7ADED0DA201EB983003B37E2 /* AKSignUpViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A12C7882149734F003AF8FE /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C78921497357003AF8FE /* Controllers */,
+				7A12C79E21498696003AF8FE /* Models */,
+				7A12C79321497713003AF8FE /* ViewModels */,
+				7A12C78C214973BF003AF8FE /* Views */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
+		7A12C78921497357003AF8FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C77F21497243003AF8FE /* AKReposViewController.h */,
+				7A12C78021497243003AF8FE /* AKReposViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A12C78A21497374003AF8FE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C78B2149737B003AF8FE /* Controllers */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7A12C78B2149737B003AF8FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7AB98F7F214829A400947269 /* AKMainViewController.h */,
+				7AB98F80214829A400947269 /* AKMainViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A12C78C214973BF003AF8FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C791214975B5003AF8FE /* IReposView.h */,
+				7A12C792214976A8003AF8FE /* IReposViewDelegate.h */,
+				7A12C79D2149822D003AF8FE /* AKReposView.h */,
+				7A12C78F214973FB003AF8FE /* AKReposView.m */,
+				7A12C7982149819E003AF8FE /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A12C79321497713003AF8FE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C79421497738003AF8FE /* IReposViewModel.h */,
+				7A12C7952149774E003AF8FE /* AKReposViewModelImpl.h */,
+				7A12C7962149774E003AF8FE /* AKReposViewModelImpl.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7A12C7982149819E003AF8FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C799214981C2003AF8FE /* IRepoCellPrototype.h */,
+				7A12C79A214981ED003AF8FE /* AKRepoTableViewCell.h */,
+				7A12C79B214981ED003AF8FE /* AKRepoTableViewCell.m */,
+				7A12C7A8214995CE003AF8FE /* AKRepoExtendedTableViewCell.h */,
+				7A12C7A9214995CE003AF8FE /* AKRepoExtendedTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7A12C79E21498696003AF8FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C79F214987FB003AF8FE /* AKRepo.h */,
+				7A12C7A0214987FB003AF8FE /* AKRepo.m */,
+				7A12C7A2214988DB003AF8FE /* AKRepo+Displayable.h */,
+				7A12C7A3214988DB003AF8FE /* AKRepo+Displayable.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A12C7AB2149A6DE003AF8FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C7AC2149A701003AF8FE /* NSArray+SafeIndex.h */,
+				7A12C7AD2149A701003AF8FE /* NSArray+SafeIndex.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7A12C7AF2149A97E003AF8FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7AB98F412146B15900947269 /* ISignUpView.h */,
+				7AB98F422146B19800947269 /* ISignUpViewEventHandler.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A12C7B02149A99C003AF8FE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C7B12149A9BE003AF8FE /* Controllers */,
+				7A12C7B22149A9D1003AF8FE /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7A12C7B12149A9BE003AF8FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7ADED0DD201EB9DC003B37E2 /* AKBaseViewController.h */,
+				7ADED0DE201EB9DC003B37E2 /* AKBaseViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A12C7B22149A9D1003AF8FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7AE57E80200B8668004576CB /* BaseView.h */,
+				7AE57E81200B8668004576CB /* BaseView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7AB98F3D2146B0BA00947269 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7A12C779214970A8003AF8FE /* Repos */,
+				7A12C77821497097003AF8FE /* Login */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7AB98F7D214826ED00947269 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7AE57E66200B8267004576CB /* Main.storyboard */,
+				7AE57E6B200B8267004576CB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7AB98F7E2148270900947269 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AE57E69200B8267004576CB /* Assets.xcassets */,
+				7AE57E6E200B8267004576CB /* Info.plist */,
+				7AE57E6F200B8267004576CB /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AE57E54200B8267004576CB = {
+			isa = PBXGroup;
+			children = (
+				7AE57E5F200B8267004576CB /* authorize-objc */,
+				7AE57E5E200B8267004576CB /* Products */,
+				A37E2AAA99B0893F5ABC2B02 /* Pods */,
+				8C96A990BE45103D0600A40B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7AE57E5E200B8267004576CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AE57E5D200B8267004576CB /* authorize-objc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AE57E5F200B8267004576CB /* authorize-objc */ = {
+			isa = PBXGroup;
+			children = (
+				7AE57E60200B8267004576CB /* AppDelegate.h */,
+				7AE57E61200B8267004576CB /* AppDelegate.m */,
+				7A12C7AB2149A6DE003AF8FE /* Extensions */,
+				7AB98F3D2146B0BA00947269 /* Services */,
+				7AB98F7D214826ED00947269 /* Storyboards */,
+				7AB98F7E2148270900947269 /* Supporting Files */,
+				7A12C782214972B4003AF8FE /* UserStories */,
+			);
+			path = "authorize-objc";
+			sourceTree = "<group>";
+		};
+		8C96A990BE45103D0600A40B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABCBEA995DECDA551E4947D1 /* libPods-authorize-objc.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A37E2AAA99B0893F5ABC2B02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A58C29D83C60796620073BF9 /* Pods-authorize-objc.debug.xcconfig */,
+				89210B5E363377371AD058C2 /* Pods-authorize-objc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AE57E5C200B8267004576CB /* authorize-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE57E73200B8267004576CB /* Build configuration list for PBXNativeTarget "authorize-objc" */;
+			buildPhases = (
+				78E274E5022B92DAB2420F38 /* [CP] Check Pods Manifest.lock */,
+				7AE57E59200B8267004576CB /* Sources */,
+				7AE57E5A200B8267004576CB /* Frameworks */,
+				7AE57E5B200B8267004576CB /* Resources */,
+				F8C62752CE1002925AE4E4E7 /* [CP] Embed Pods Frameworks */,
+				D4CA917419C000C48D301DF1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "authorize-objc";
+			productName = "authorize-objc";
+			productReference = 7AE57E5D200B8267004576CB /* authorize-objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AE57E55200B8267004576CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Askar Karimov";
+				TargetAttributes = {
+					7AE57E5C200B8267004576CB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7AE57E58200B8267004576CB /* Build configuration list for PBXProject "authorize-objc" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AE57E54200B8267004576CB;
+			productRefGroup = 7AE57E5E200B8267004576CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AE57E5C200B8267004576CB /* authorize-objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AE57E5B200B8267004576CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE57E6D200B8267004576CB /* LaunchScreen.storyboard in Resources */,
+				7AE57E6A200B8267004576CB /* Assets.xcassets in Resources */,
+				7AE57E68200B8267004576CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78E274E5022B92DAB2420F38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-authorize-objc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4CA917419C000C48D301DF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-authorize-objc/Pods-authorize-objc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C62752CE1002925AE4E4E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-authorize-objc/Pods-authorize-objc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AE57E59200B8267004576CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A12C78121497243003AF8FE /* AKReposViewController.m in Sources */,
+				7AE57E78200B85F0004576CB /* AKLoginViewController.m in Sources */,
+				7A12C7A4214988DB003AF8FE /* AKRepo+Displayable.m in Sources */,
+				7ADED0DF201EB9DC003B37E2 /* AKBaseViewController.m in Sources */,
+				7A12C77D2149715A003AF8FE /* ReposServiceGithubImpl.m in Sources */,
+				7AC853E9201507B0007C5E0D /* AnotherBaseLoginView.m in Sources */,
+				7A12C79C214981ED003AF8FE /* AKRepoTableViewCell.m in Sources */,
+				7AB98F81214829A400947269 /* AKMainViewController.m in Sources */,
+				7AE57E70200B8267004576CB /* main.m in Sources */,
+				7AE57E7F200B8656004576CB /* LoginView.m in Sources */,
+				7A12C7A721498A3A003AF8FE /* ReposServiceDebugImpl.m in Sources */,
+				7A12C790214973FB003AF8FE /* AKReposView.m in Sources */,
+				7AC853E620150742007C5E0D /* BaseLoginView.m in Sources */,
+				7A12C7972149774E003AF8FE /* AKReposViewModelImpl.m in Sources */,
+				7A12C7AE2149A701003AF8FE /* NSArray+SafeIndex.m in Sources */,
+				7A12C7A1214987FB003AF8FE /* AKRepo.m in Sources */,
+				7AB98F402146B0CA00947269 /* LoginService.m in Sources */,
+				7ADED0DB201EB983003B37E2 /* AKSignUpViewController.m in Sources */,
+				7AE57E62200B8267004576CB /* AppDelegate.m in Sources */,
+				7A12C7AA214995CE003AF8FE /* AKRepoExtendedTableViewCell.m in Sources */,
+				7AE57E82200B8668004576CB /* BaseView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7AE57E66200B8267004576CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE57E67200B8267004576CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7AE57E6B200B8267004576CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE57E6C200B8267004576CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AE57E71200B8267004576CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7AE57E72200B8267004576CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AE57E74200B8267004576CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58C29D83C60796620073BF9 /* Pods-authorize-objc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9D687X892;
+				INFOPLIST_FILE = "authorize-objc/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kz.askarkarimov.authorize-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AE57E75200B8267004576CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89210B5E363377371AD058C2 /* Pods-authorize-objc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9D687X892;
+				INFOPLIST_FILE = "authorize-objc/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kz.askarkarimov.authorize-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AE57E58200B8267004576CB /* Build configuration list for PBXProject "authorize-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE57E71200B8267004576CB /* Debug */,
+				7AE57E72200B8267004576CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE57E73200B8267004576CB /* Build configuration list for PBXNativeTarget "authorize-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE57E74200B8267004576CB /* Debug */,
+				7AE57E75200B8267004576CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AE57E55200B8267004576CB /* Project object */;
+}
